@@ -9,9 +9,9 @@
     "node": "20"
   },
   "scripts": {
-    "build": "tree-sitter generate && tree-sitter build-wasm --docker .",
-    "test": "tree-sitter test",
-    "preinstall": "tree-sitter generate",
+    "build": "npx tree-sitter generate && npx tree-sitter build-wasm --docker .",
+    "test": "npx tree-sitter test",
+    "preinstall": "npx tree-sitter generate",
     "install": "node-gyp-build",
     "prebuildify": "prebuildify --napi --strip"
   },
